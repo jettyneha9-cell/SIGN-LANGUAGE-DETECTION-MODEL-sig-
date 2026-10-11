@@ -1,9 +1,12 @@
 # Using DETR Transformers for Basic Sign Language Estimation
-More of a deep dive into training a DETR model from scratch and all the nuaces with getting object detection running. It was...fun. Anyway, here's a full walkthrough from me to you. Let me know how you go!
+It's a full end to end DETR object detection pipeline, in this video its fine tuned for detecting signs but it could definitely be repurposed for other object detection tasks. It covers: 
+⚡️ Detections using my pre-trained transformer
 
-## See it live and in action 📺 - Click the image!
-<a href=""><img src="https://i.imgur.com/Om4kU9a.png"/></a>
-Link to be added. 
+💾 Collecting custom data for you to train your own
+
+🏋🏽‍♀️ Fine tuning, with or without pre-trained weights
+
+
 
 # Setup 🪛
 1. Install UV - `pip install uv`
@@ -29,11 +32,3 @@ Link to be added.
 2. To run in real time, update the checkpoint parameter in `realtime.py` then run `uv run src/realtime.py`</br> 
 <strong>N.B.</strong> you might need need to update your camera parameter in cv2.VideoCapture() to get the right webcam for your machine. 
 
-# Great resources: 
-- <a href='https://colab.research.google.com/github/facebookresearch/detr/blob/colab/notebooks/detr_demo.ipynb'>DETR walkthrough</a> - I used this a ton when initially working out how to do this. 
-
-
-# Who, When, Why?
-👨🏾‍💻 Author: Nick Renotte <br />
-📅 Version: 1.x<br />
-📜 License: This project is licensed under the MIT License </br>
